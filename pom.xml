@@ -9,9 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>demo01</module>
-        <module>demo02</module>
-        <module>demo02</module>
+
+        <module>VueAdminJava</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,8 +28,9 @@
         <spring.cloud>Hoxton.SR8</spring.cloud>
         <spring.cloud.alibaba>2.2.5.RELEASE</spring.cloud.alibaba>
 
-
-
+        <mybatis.plus>3.4.1</mybatis.plus>
+        <mybatis.plus.generator>3.4.1</mybatis.plus.generator>
+        <druid>1.1.21</druid>
 
 
     </properties>
@@ -67,6 +67,23 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis.plus.generator}</version>
+            </dependency>
+
+            <!--阿里数据库连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid}</version>
+            </dependency>
 
 
             <dependency>

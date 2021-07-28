@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="初始化导入">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/ResponseStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/common/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/MyBatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/SpringFoxConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleMenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/CommonException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleMenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/util/CodeGeneratorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/数据库脚本 - vueadmin.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-security.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserRoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/BootMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/controller/TestCon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/entiry/UsersVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/service/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo01/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/Main8081.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/ApplicationRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/controller/TestCon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/entity/MyUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/service/MyUserDetailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo02/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\software\maven\maven_repository" />
+        <option name="mavenHome" value="D:\software\java\idea\plugins\maven\lib\maven3" />
+        <option name="userSettingsFile" value="D:\software\maven\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1tvqIVMWrpGX7r6En1cZ8DLAtr5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.30034524" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud\controller" />
+      <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud\service\impl" />
+      <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud\service" />
+      <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud" />
+      <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud\mapper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApplicationRun">
+    <configuration name="BootMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zwq.security.BootMain" />
+      <module name="demo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeGeneratorUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.util.CodeGeneratorUtil" />
+      <module name="VueAdminJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.cloud.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main8081" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zwq.demo02.Main8081" />
+      <module name="demo02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.demo02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApplicationRun" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="VueAdminJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zwq.cloud.ApplicationRun" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BootMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="demo01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.security.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zwq.security.BootMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ApplicationRun" />
+        <item itemvalue="Application.CodeGeneratorUtil" />
+        <item itemvalue="Spring Boot.BootMain" />
+        <item itemvalue="Application.BootMain" />
+        <item itemvalue="Application.Main8081" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\asus\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="" />
+      <created>1623659830779</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1623659830779</updated>
+      <workItem from="1625850336236" duration="722000" />
+      <workItem from="1625928962331" duration="156000" />
+      <workItem from="1626707729290" duration="669000" />
+      <workItem from="1627215745202" duration="1234000" />
+      <workItem from="1627394605795" duration="9112000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化导入">
+      <created>1625583463919</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625583463919</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="初始化导入" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化导入" />
+  </component>
+</project>
