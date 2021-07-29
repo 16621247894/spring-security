@@ -6,3 +6,59 @@
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+
+
+*.class
+
+#package files
+
+*.war
+*.ear
+
+#kdiff3 ignore
+target/
+
+#eclipse ignore
+.settings/
+.project
+.classpath
+
+#idea
+.idea/
+/idea/
+*.ipr
+*.iml
+*.iws
+*.iml
+
+# temp file
+
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
+
+#system ignore
+.DS_Store
+Thumbs.db
+
+
+# Compiled class file
+*.class
+# Log file
+*.log
+# BlueJ files
+*.ctxt
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

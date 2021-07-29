@@ -13,77 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="初始化导入">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/ResponseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/common/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/SpringFoxConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleMenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserRoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserRoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleMenuService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserRoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleMenuServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserRoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/util/CodeGeneratorUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/数据库脚本 - vueadmin.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-security.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysRoleMenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/SysUserRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/BootMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/controller/TestCon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/entiry/UsersVO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/java/com/zwq/security/service/MyUserDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo01/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/Main8081.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/ApplicationRun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/config/SecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/controller/TestCon.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/entity/MyUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/java/com/zwq/demo02/service/MyUserDetailService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo02/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="初始化导入,配置全局异常和统一返回数据">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,7 +189,7 @@
       <workItem from="1625928962331" duration="156000" />
       <workItem from="1626707729290" duration="669000" />
       <workItem from="1627215745202" duration="1234000" />
-      <workItem from="1627394605795" duration="9112000" />
+      <workItem from="1627394605795" duration="11513000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1625583463919</created>
@@ -264,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625583463919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化导入,配置全局异常和统一返回数据">
+      <created>1627488018004</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1627488018004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,6 +226,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始化导入" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化导入" />
+    <MESSAGE value="初始化导入,配置全局异常和统一返回数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化导入,配置全局异常和统一返回数据" />
   </component>
 </project>
