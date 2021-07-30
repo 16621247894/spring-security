@@ -1,4 +1,4 @@
-package com.zwq.cloud.util;
+package com.zwq.cloud.utils;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;

@@ -9,6 +9,10 @@ mybatis-plus:
 
 # 数据源配置
 spring:
+  security:
+    user:
+      password: 123456
+      name: zwq
   datasource:
     url: jdbc:mysql://localhost:3306/vueAdmin?useUnicode=true&characterEncoding=utf-8&useSSL=false&rewriteBatchedStatements=true&serverTimezone=GMT&serverTimezone=Asia/Shanghai
     username: root
@@ -56,4 +60,16 @@ spring:
         wall:
           config:
             multi-statement-allow: true
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+
 

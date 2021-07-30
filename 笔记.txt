@@ -28,4 +28,5 @@ config配置类中
 auth.userDetailsService(myUserDetailService).passwordEncoder(passwordEncoder);
 
 
-
+启动redis
+>redis-server.exe redis.windows.conf

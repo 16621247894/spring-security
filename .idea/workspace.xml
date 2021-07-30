@@ -13,11 +13,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="初始化导入,配置全局异常和统一返回数据">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/KaptchaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/IGasCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/RedisCache.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/util/CodeGeneratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/CodeGeneratorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.txt" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +81,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30034524" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -84,6 +92,13 @@
       <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud" />
       <recent name="D:\study\workspace\work_idea\spring-security\VueAdminJava\src\main\java\com\zwq\cloud\mapper" />
     </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Application" />
+      </set>
+    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.ApplicationRun">
     <configuration name="BootMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -100,11 +115,11 @@
       </method>
     </configuration>
     <configuration name="CodeGeneratorUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.util.CodeGeneratorUtil" />
+      <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.utils.CodeGeneratorUtil" />
       <module name="VueAdminJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zwq.cloud.util.*" />
+          <option name="PATTERN" value="com.zwq.cloud.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -189,7 +204,7 @@
       <workItem from="1625928962331" duration="156000" />
       <workItem from="1626707729290" duration="669000" />
       <workItem from="1627215745202" duration="1234000" />
-      <workItem from="1627394605795" duration="11513000" />
+      <workItem from="1627394605795" duration="15032000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1625583463919</created>
@@ -205,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627488018004</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加忽略文件">
+      <created>1627568311572</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1627568311572</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +249,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="初始化导入" />
     <MESSAGE value="初始化导入,配置全局异常和统一返回数据" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化导入,配置全局异常和统一返回数据" />
+    <MESSAGE value="添加忽略文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加忽略文件" />
   </component>
 </project>
