@@ -5,6 +5,8 @@ import com.zwq.cloud.entity.SysUser;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -15,5 +17,6 @@ import org.springframework.stereotype.Service;
  */
 @Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
+    List<Long> getNavMenuIds(Long userId);
 
 }

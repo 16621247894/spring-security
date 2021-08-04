@@ -1,4 +1,4 @@
-package com.zwq.cloud;
+package com.zwq.cloud.common;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

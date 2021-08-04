@@ -33,8 +33,9 @@ public class SysUser extends BaseEntity {
 
     private String city;
 
-
-    //private LocalDate lastLogin;
+    /**
+     * LocalDate 也可以是的
+     */
     private LocalDateTime lastLogin;
 
 }

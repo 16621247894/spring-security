@@ -15,6 +15,7 @@ public class MyBatisPlusConfig {
 
     /**
      * 插件
+     *
      * @return
      */
     @Bean
@@ -30,9 +31,8 @@ public class MyBatisPlusConfig {
 
 
     @Bean
-    public ConfigurationCustomizer configurationCustomizer(){
+    public ConfigurationCustomizer configurationCustomizer() {
         return configuration -> configuration.setUseDeprecatedExecutor(false);
     }
-
 
 }

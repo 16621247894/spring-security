@@ -1,7 +1,9 @@
 package com.zwq.cloud.exception;
 
 import com.zwq.cloud.common.Response;
-
+/**
+ * @author wuqing.zhu
+ */
 public class CommonException extends RuntimeException {
     private int code;
 
@@ -23,6 +25,9 @@ public class CommonException extends RuntimeException {
 
     public CommonException(int code, String message) {
         this(code, message, null, null);
+    }
+    public CommonException(String message){
+        this(-1,message,null,null);
     }
 
     public <T> Response<T> response() {

@@ -15,5 +15,8 @@ import org.springframework.stereotype.Service;
 @Service
 
 public interface SysUserService extends IService<SysUser> {
+    SysUser getByUsername(String username);
 
+
+    String getUserAuthorityInfo(Long userId);
 }

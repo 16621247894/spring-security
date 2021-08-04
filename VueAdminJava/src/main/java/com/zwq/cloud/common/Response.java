@@ -1,6 +1,5 @@
 package com.zwq.cloud.common;
 
-import com.zwq.cloud.ResponseStatus;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

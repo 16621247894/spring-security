@@ -1,6 +1,5 @@
 package com.zwq.cloud.utils;
 
-import com.zwq.cloud.mapper.IGasCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.connection.DataType;
 import org.springframework.data.redis.core.Cursor;
@@ -378,6 +377,20 @@ public class RedisCache {
 
     public void hPut(String key, String hashKey, String value) {
         redisTemplate.opsForHash().put(key, hashKey, value);
+    }
+
+    /**
+     * 设置hash
+     * @param key  hash里面的key
+     * @param item  key的中item
+     * @param value item的值
+     * @param time  有效期
+     */
+    public void hPut(String key, String item, Object value, long time) {
+        redisTemplate.opsForHash().put(key, item, value);
+        if (time > 0) {
+            expire(key, time, TimeUnit.DAYS);
+        }
     }
 
     public void hPutAll(String key, Map<String, String> maps) {
