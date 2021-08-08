@@ -2,17 +2,21 @@ package com.zwq.cloud.controller;
 
 
 import cn.hutool.core.map.MapUtil;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.zwq.cloud.common.Response;
+import com.zwq.cloud.entity.SysMenu;
+import com.zwq.cloud.entity.SysRoleMenu;
 import com.zwq.cloud.entity.SysUser;
 import com.zwq.cloud.model.SysMenuDto;
 import com.zwq.cloud.service.SysUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -41,6 +45,50 @@ public class SysMenuController extends BaseController {
         return Response.success(MapUtil.builder().put("authoritys", authorityInfoArray).put("nav", navs).map());
 
 
+    }
+
+    @GetMapping("/list")
+    @PreAuthorize("hasAuthority('sys:menu:list')")
+    public Response list() {
+        List<SysMenu> menus = sysMenuService.tree();
+        return Response.success(menus);
+    }
+
+    @PostMapping("/delete/{id}")
+    @PreAuthorize("hasAuthority('sys:menu:delete')")
+    public Response delete(@PathVariable("id") Long id) {
+
+        int count = sysMenuService.count(new QueryWrapper<SysMenu>().eq("parent_id", id));
+        if (count > 0) {
+            return Response.fail("请先删除子菜单");
+        }
+
+        // 清除所有与该菜单相关的权限缓存
+        sysUserService.clearAuthorityInfoByMenu(id);
+
+        sysMenuService.removeById(id);
+        // 同步删除中间关联表
+        sysRoleMenuService.remove(new QueryWrapper<SysRoleMenu>().eq("menu_id", id));
+        return Response.success("");
+    }
+
+    @PostMapping("/update")
+    @PreAuthorize("hasAuthority('sys:menu:update')")
+    public Response update(@Validated @RequestBody SysMenu sysMenu) {
+
+        sysMenu.setUpdated(LocalDateTime.now());
+        sysMenuService.updateById(sysMenu);
+        // 清除所有与该菜单相关的权限缓存
+        sysUserService.clearAuthorityInfoByMenu(sysMenu.getId());
+        return Response.success(sysMenu);
+    }
+
+    @PostMapping("/save")
+    @PreAuthorize("hasAuthority('sys:menu:save')")
+    public Response save(@Validated @RequestBody SysMenu sysMenu) {
+        sysMenu.setCreated(LocalDateTime.now());
+        sysMenuService.save(sysMenu);
+        return Response.success(sysMenu);
     }
 
 }

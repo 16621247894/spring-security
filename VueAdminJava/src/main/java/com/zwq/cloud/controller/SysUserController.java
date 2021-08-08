@@ -8,6 +8,7 @@ import com.zwq.cloud.common.Response;
 import com.zwq.cloud.entity.SysRole;
 import com.zwq.cloud.entity.SysUser;
 import com.zwq.cloud.entity.SysUserRole;
+import com.zwq.cloud.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -33,11 +34,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/sys/user")
 public class SysUserController extends BaseController<SysUser> {
-    public final static Integer STATUS_ON = 0;
-    public final static Integer STATUS_OFF = 1;
 
-    public static final String DEFULT_PASSWORD = "888888";
-    public static final String DEFULT_AVATAR = "https://image-1300566513.cos.ap-guangzhou.myqcloud.com/upload/images/5a9f48118166308daba8b6da7e466aab.jpg";
 
     @Autowired
     BCryptPasswordEncoder passwordEncoder;
@@ -90,6 +87,7 @@ public class SysUserController extends BaseController<SysUser> {
 
     /**
      * 添加或者修改方法
+     *
      * @param sysUser
      * @return
      */
@@ -98,14 +96,14 @@ public class SysUserController extends BaseController<SysUser> {
     public Response save(@Validated @RequestBody SysUser sysUser) {
 
         sysUser.setCreated(LocalDateTime.now());
-        sysUser.setStatu(STATUS_ON);
+        sysUser.setStatu(Constants.STATUS_ON);
 
         // 默认密码
-        String password = passwordEncoder.encode(DEFULT_PASSWORD);
+        String password = passwordEncoder.encode(Constants.DEFULT_PASSWORD);
         sysUser.setPassword(password);
 
         // 默认头像
-        sysUser.setAvatar(DEFULT_AVATAR);
+        sysUser.setAvatar(Constants.DEFULT_AVATAR);
 
         sysUserService.save(sysUser);
         return Response.success(sysUser);
@@ -119,15 +117,14 @@ public class SysUserController extends BaseController<SysUser> {
         sysUserService.clearAuthorityInfoByUser(sysUser.getUsername());
         return Response.success(sysUser);
     }
+
     @Transactional(rollbackFor = Exception.class)
     @PostMapping("/delete")
     @PreAuthorize("hasAuthority('sys:user:delete')")
     public Response delete(@RequestBody Long[] ids) {
         sysUserService.removeByIds(Arrays.asList(ids));
         sysUserRoleService.remove(new QueryWrapper<SysUserRole>().in("user_id", ids));
-        Response resp=new Response();
-        resp.setCode(300);
-        return resp;
+        return Response.success();
     }
 
 }

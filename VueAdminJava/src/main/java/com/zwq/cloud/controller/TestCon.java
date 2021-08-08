@@ -35,14 +35,12 @@ public class TestCon {
 
         String password=passwordEncoder.encode("111111");
         boolean ma=passwordEncoder.matches("111111",password);
-        System.out.println("获取的结果:"+ma);
 
         return Response.success(password);
     }
     @PreAuthorize("hasAuthority('sys:user:list')")
     @GetMapping("pass")
     public Response pass(){
-        System.out.println("huoq li");
         return Response.success();
     }
 

@@ -58,7 +58,6 @@ public class AuthController extends BaseController {
         System.out.println("获取的code:"+code);*/
         String base64Img = str + Base64Encoder.encode(outputStream.toByteArray());
         redisCache.hPut(Constants.Captcha.CAPTCHA_KEY, key, code, 10);
-        System.out.println("生成了验证码");
         return Response.success(
                 MapUtil.builder()
                         .put("key", key)

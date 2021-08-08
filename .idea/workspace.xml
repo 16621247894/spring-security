@@ -16,38 +16,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="添加验证码等信息">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/model/SysMenuDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/JwtLogoutSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/mapper/SysRoleMapper.xml" afterDir="false" />
+    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="完成用户管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/MyBatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/MyBatisPlusConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/AuthController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleMenuController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/mapper/SysUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/CaptchaFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/CaptchaFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysMenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysRoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/SysUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysRoleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/RedisCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/RedisCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/resources/mapper/SysUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/resources/mapper/SysUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/CodeGeneratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/CodeGeneratorUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +98,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30034524" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="show.run.dashboard.notification" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -246,7 +229,7 @@
       <workItem from="1627394605795" duration="32721000" />
       <workItem from="1627914796827" duration="3549000" />
       <workItem from="1628174863923" duration="20800000" />
-      <workItem from="1628418446860" duration="2637000" />
+      <workItem from="1628418446860" duration="8309000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1625583463919</created>
@@ -283,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628086986514</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成用户管理">
+      <created>1628421376658</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628421376658</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,7 +298,8 @@
     <MESSAGE value="添加忽略文件" />
     <MESSAGE value="添加redis和验证码生成" />
     <MESSAGE value="添加验证码等信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加验证码等信息" />
+    <MESSAGE value="完成用户管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户管理" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -317,6 +308,16 @@
           <url>file://$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/security/CaptchaFilter.java</url>
           <line>37</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,10 +3,7 @@ package com.zwq.cloud.controller;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.zwq.cloud.common.Response;
 import com.zwq.cloud.entity.SysUser;
-import com.zwq.cloud.service.SysMenuService;
-import com.zwq.cloud.service.SysRoleService;
-import com.zwq.cloud.service.SysUserRoleService;
-import com.zwq.cloud.service.SysUserService;
+import com.zwq.cloud.service.*;
 import com.zwq.cloud.utils.RedisCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.ServletRequestUtils;
@@ -29,6 +26,8 @@ public class BaseController<T> {
     @Autowired
     RedisCache redisCache;
 
+    @Autowired
+    SysRoleMenuService sysRoleMenuService;
 
     @Autowired
     SysMenuService sysMenuService;

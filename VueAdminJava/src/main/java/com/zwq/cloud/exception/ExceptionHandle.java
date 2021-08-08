@@ -43,6 +43,7 @@ public class ExceptionHandle {
     @ExceptionHandler(value = RuntimeException.class)
     public Response handler(RuntimeException e) {
         log.error("运行时异常：----------------{}", e.getMessage());
+        e.printStackTrace();
         return Response.fail(e.getMessage());
     }
 
