@@ -20,9 +20,33 @@ import java.util.Objects;
 @RestControllerAdvice
 public class ExceptionHandle {
     private static Logger logger = LoggerFactory.getLogger(ExceptionHandle.class);
+    // 实体校验异常捕获
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = MethodArgumentNotValidException.class)
+    public Response handler(MethodArgumentNotValidException e) {
 
+        BindingResult result = e.getBindingResult();
+        ObjectError objectError = result.getAllErrors().stream().findFirst().get();
 
-    @ResponseStatus(HttpStatus.FORBIDDEN)
+        log.error("实体校验异常：----------------{}", objectError.getDefaultMessage());
+        return Response.fail(objectError.getDefaultMessage());
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = IllegalArgumentException.class)
+    public Response handler(IllegalArgumentException e) {
+        log.error("Assert异常：----------------{}", e.getMessage());
+        return Response.fail(e.getMessage());
+    }
+
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = RuntimeException.class)
+    public Response handler(RuntimeException e) {
+        log.error("运行时异常：----------------{}", e.getMessage());
+        return Response.fail(e.getMessage());
+    }
+
+    /*@ResponseStatus(HttpStatus.FORBIDDEN)
     @ExceptionHandler(value = AccessDeniedException.class)
     public Response handler(AccessDeniedException e) {
         log.info("security权限不足：----------------{}", e.getMessage());
@@ -58,11 +82,11 @@ public class ExceptionHandle {
             MethodArgumentNotValidException validException = (MethodArgumentNotValidException) exception;
             String msg = Objects.requireNonNull(validException.getBindingResult().getFieldError()).getDefaultMessage();
             return Response.fail(202, msg);
-        } else {
+        } else{
             logger.error("异常：" + exception.getMessage());
-            exception.printStackTrace();
+            //exception.printStackTrace();
             return Response.fail(-1, "异常:" + exception.getMessage());
         }
 
-    }
+    }*/
 }

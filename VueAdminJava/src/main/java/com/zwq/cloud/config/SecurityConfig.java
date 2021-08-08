@@ -58,6 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     UserDetailServiceImpl userDetailService;
 
+    @Autowired
+    JwtLogoutSuccessHandler logoutSuccessHandler;
 
     /**
      * 验证码拦截器
@@ -94,6 +96,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 // 失败处理器
                 .failureHandler(loginFailureHandler)
 
+                // 配置退出
+                .and()
+                .logout()
+                .logoutSuccessHandler(logoutSuccessHandler)
+
                 // 禁用session
 
                 .and().sessionManagement()
@@ -127,6 +134,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     /**
      * 自定义用户密码验证法
+     *
      * @param auth
      * @throws Exception
      */

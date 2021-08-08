@@ -184,6 +184,16 @@ public class RedisCache {
     }
 
     /**
+     * 设置key-value-time
+     * @param key
+     * @param value
+     * @param time
+     */
+    public void set(String key,String value,Long time){
+        redisTemplate.opsForValue().set(key,value,time,TimeUnit.SECONDS);
+    }
+
+    /**
      * 获取指定 key 的值
      *
      * @param key

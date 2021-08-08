@@ -4,7 +4,11 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.zwq.cloud.entity.SysRole;
 import com.zwq.cloud.mapper.SysRoleMapper;
 import com.zwq.cloud.service.SysRoleService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * <p>
@@ -17,4 +21,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class SysRoleServiceImpl extends ServiceImpl<SysRoleMapper, SysRole> implements SysRoleService {
 
+
+
+    @Override
+    public List<SysRole> getRoleByUserId(Long userId) {
+        return baseMapper.getRoleByUserId(userId);
+    }
 }

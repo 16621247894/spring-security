@@ -2,6 +2,7 @@ package com.zwq.cloud.security;
 
 import com.zwq.cloud.common.Response;
 import com.zwq.cloud.utils.JwtUtils;
+import com.zwq.cloud.utils.RedisCache;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import cn.hutool.json.JSONUtil;
@@ -26,24 +27,21 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
     @Autowired
     private JwtUtils jwtUtils;
 
+    @Autowired
+    RedisCache redisCache;
+
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
+                                        Authentication authentication) throws IOException, ServletException {
         response.setContentType("application/json;charset=UTF-8");
         ServletOutputStream outputStream = response.getOutputStream();
-
         // 生成jwt，并放置到请求头中
-        String jwt=jwtUtils.generateToken(authentication.getName());
-        response.setHeader(jwtUtils.getHeader(),jwt);
-
-
-        /*String jwt = jwtUtils.generateToken(authentication.getName());
-        response.setHeader(jwtUtils.getHeader(), jwt);*/
-
+        String jwt = jwtUtils.generateToken(authentication.getName());
+        response.setHeader(jwtUtils.getHeader(), jwt);
+        // 保存30分钟
+        redisCache.set(jwt, jwt, new Long(30));
         Response result = Response.success(jwt);
-
-
         outputStream.write(JSONUtil.toJsonStr(result).getBytes("UTF-8"));
-
         outputStream.flush();
         outputStream.close();
     }

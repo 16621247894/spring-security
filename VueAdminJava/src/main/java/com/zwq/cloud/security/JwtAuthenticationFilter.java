@@ -4,9 +4,13 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Objects;
 
 import cn.hutool.core.util.StrUtil;
+import com.zwq.cloud.entity.SysUser;
+import com.zwq.cloud.service.SysUserService;
 import com.zwq.cloud.utils.JwtUtils;
+import com.zwq.cloud.utils.RedisCache;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,19 +24,26 @@ import javax.servlet.FilterChain;
 /**
  * @author asus
  * 登录之后 校验jwt
- *
  */
 public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
     @Autowired
     JwtUtils jwtUtils;
 
+    @Autowired
+    RedisCache redisCache;
+
+    @Autowired
+    SysUserService sysUserService;
+    @Autowired
+    UserDetailServiceImpl userDetailService;
 
     public JwtAuthenticationFilter(AuthenticationManager authenticationManager) {
         super(authenticationManager);
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
+                                    FilterChain chain) throws IOException, ServletException {
 
         String jwt = request.getHeader(jwtUtils.getHeader());
 
@@ -52,11 +63,14 @@ public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
 
         String username = claim.getSubject();
         // 获取用户的权限等信息
+        SysUser sysUser = sysUserService.getByUsername(username);
+        UsernamePasswordAuthenticationToken token
+                = new UsernamePasswordAuthenticationToken(username, null,
+                userDetailService.getUserAuthority(sysUser.getId()));
 
-
-        UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(username, null, null);
-        // 进行认证信息配置
         SecurityContextHolder.getContext().setAuthentication(token);
+
+
         chain.doFilter(request, response);
     }
 }

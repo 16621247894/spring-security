@@ -26,7 +26,8 @@ public class CaptchaFilter extends OncePerRequestFilter {
     RedisCache redisCache;
 
     @Override
-    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
+    protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse,
+                                    FilterChain filterChain) throws ServletException, IOException {
 
         // 获取当前的url
         String url = httpServletRequest.getRequestURI();
@@ -51,21 +52,16 @@ public class CaptchaFilter extends OncePerRequestFilter {
      */
     private void validate(HttpServletRequest httpServletRequest) {
         String key = httpServletRequest.getParameter("token");
-
         String code = httpServletRequest.getParameter("code");
-
-        System.out.println("获取keY:" + key);
-        System.out.println("code:" + code);
         if (StringUtils.isBlank(code) || StringUtils.isBlank(key)) {
             throw new CaptchaException("验证码错误");
         }
         Object redisCode = redisCache.hGet(Constants.Captcha.CAPTCHA_KEY, key);
-       // System.out.println("获取的redisC:" + redisCode);
         if (!code.equals(redisCode)) {
             throw new CaptchaException("验证码错误");
         }
         // 一次性使用
-        //redisCache.hDelete(Constants.Captcha.CAPTCHA_KEY, key);
+        redisCache.hDelete(Constants.Captcha.CAPTCHA_KEY, key);
     }
 }
 

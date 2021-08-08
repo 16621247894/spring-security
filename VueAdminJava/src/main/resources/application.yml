@@ -1,9 +1,19 @@
 server:
   port: 8080
 
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+  returnPageInfo: check
+
 # Mybatis-Plus
 mybatis-plus:
-  mapper-locations: classpath*:/mapper/**/*Mapper.xml # Mapper对应的 XML文件位置
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/**/*.xml # Mapper对应的 XML文件位置
   #type-aliases-package: com.zwq.entity  ## 别名包扫描路径
 
 
