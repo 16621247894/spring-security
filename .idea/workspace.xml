@@ -17,20 +17,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="完成用户管理">
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/OauthMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/SpringSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysRoleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/SysUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/entity/SysRoleMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/exception/ExceptionHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/service/impl/SysMenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/CodeGeneratorUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/CodeGeneratorUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oauth2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +67,7 @@
   </component>
   <component name="ProjectId" id="1tvqIVMWrpGX7r6En1cZ8DLAtr5" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -88,7 +86,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/VueAdminJava/src/main/resources/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vueAdmin" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -98,7 +96,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30034524" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="shared-indexes" />
     <property name="show.run.dashboard.notification" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -124,20 +122,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApplicationRun">
-    <configuration name="BootMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zwq.security.BootMain" />
-      <module name="demo01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zwq.security.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestCon">
     <configuration name="CodeGeneratorUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.utils.CodeGeneratorUtil" />
       <module name="VueAdminJava" />
@@ -157,6 +142,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.zwq.cloud.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.controller.TestCon" />
+      <module name="VueAdminJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.cloud.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestCon" />
         <item itemvalue="Spring Boot.ApplicationRun" />
         <item itemvalue="Application.JwtUtils" />
         <item itemvalue="Application.CodeGeneratorUtil" />
         <item itemvalue="Spring Boot.BootMain" />
-        <item itemvalue="Application.BootMain" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +228,7 @@
       <workItem from="1627914796827" duration="3549000" />
       <workItem from="1628174863923" duration="20800000" />
       <workItem from="1628418446860" duration="8309000" />
+      <workItem from="1628781320836" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1625583463919</created>

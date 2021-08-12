@@ -11,7 +11,7 @@
     <modules>
 
         <module>VueAdminJava</module>
-        <module>oauth2</module>
+        <module>cloud-oauth</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
