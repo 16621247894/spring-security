@@ -45,4 +45,9 @@ public class TestCon {
     }
 
 
+    /*public static void main(String[] args) {
+        BCryptPasswordEncoder passwordEncoder=new BCryptPasswordEncoder();
+        String password=passwordEncoder.encode("111111");
+        System.out.println("获取的pwd:"+password);
+    }*/
 }
