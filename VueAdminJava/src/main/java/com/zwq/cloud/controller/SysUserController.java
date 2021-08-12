@@ -39,10 +39,10 @@ public class SysUserController extends BaseController<SysUser> {
     @Autowired
     BCryptPasswordEncoder passwordEncoder;
 
+    // 使用MybatisPlus分页
     @GetMapping("/list")
     @PreAuthorize("hasAuthority('sys:user:list')")
     public Response list(String username) {
-
         Page<SysUser> pageData = sysUserService.page(getPage(), new QueryWrapper<SysUser>()
                 .likeRight(StrUtil.isNotBlank(username), "username", username));
         pageData.getRecords().forEach(sysUser -> {

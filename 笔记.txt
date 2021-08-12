@@ -1,32 +1,5 @@
-设置用户名密码
-第一种
-spring.security.user.name=zwq
-spring.security.user.password=1231456
-
-
-第二种
-@Configuration
-创建SecurityConfig配置类 基础WebSecurityConfigurerAdapter
-
-注入加密类BCryptPasswordEncoder
-如果没有需要设置bean
-
-重写方法configure(AuthenticationManagerBuilder auth)
-
-auth.inMemoryAuthentication()
-                .passwordEncoder(passwordEncoder)
-                .withUser("user").password(passwordEncoder.encode("123456"))
-                .roles("admin");
-
-第三种 查询数据库
-创建用户包entity.MyUser
-写UserMapper
-创建自定义MyUserDetail实现接口UserDetailsService
-写查询接口
-
-config配置类中
-auth.userDetailsService(myUserDetailService).passwordEncoder(passwordEncoder);
-
-
 启动redis
 >redis-server.exe redis.windows.conf
+
+
+
