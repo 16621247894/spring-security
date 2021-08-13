@@ -2,4 +2,77 @@
 >redis-server.exe redis.windows.conf
 
 
+----授权码模式
+获取授权码的uri
 
+http://localhost:8080/oauth/authorize?response_type=code&client_id=client&redirect_uri=http://www.baidu.com&scope=all
+
+之后会提示
+Do you authorize "client" to access your protected resources?
+
+
+选择是
+Approve
+会跳转到百度并且有一个code
+code就是授权码
+https://www.baidu.com/?code=mxjQO2
+
+根据授权码获取令牌 post请求
+http://localhost:8080/oauth/token
+Authorization里面需要填写东西 Type为BASIC Auth
+设置username和password
+client
+123123
+body里面设置x-www-form-unlencoded
+grant_type=authorization_code
+code=之前传递的code
+client_id=client
+redirect_uri=http://www.baidu.com
+scope=all
+
+
+之后点击发送会返回这些数据
+"access_token": "fd116517-5c2c-497f-b5cd-198771b3d04a",
+    "token_type": "bearer",
+    "expires_in": 3429,
+    "scope": "all"
+
+
+之后拿着access_token
+去访问
+localhost:8080/user/getCurrentUser
+需要设置Authorization 里面的TYPE=Bearer Token
+Token等于access_token的值 就可以拿到用户信息
+
+
+--------------------------------------------------------------
+2.密码授权
+需要在AuthorizationServerConfigurerAdapter里面设置
+authorizedGrantTypes("password");
+之后注入这个类
+@Autowired
+AuthenticationManager authenticationManager;
+重写方法
+configure(AuthorizationServerEndpointsConfigurer endpoints)
+
+之后在postman中调用
+http://localhost:8080/oauth/token
+Authorization为Basic Auth
+Body里面的参数x---www-form
+
+grant_type=password
+username=admin
+scope=all
+password=123456
+之后还是返回access_token
+拿着token调用用户接口
+
+-----------------------------------------------------------
+
+3.刷新令牌
+.authorizedGrantTypes("password", "refresh_token", "authorization_code");
+
+会返回一个refresh_token
+
+
+https://www.bilibili.com/video/BV1244y1C7ZH?p=47
