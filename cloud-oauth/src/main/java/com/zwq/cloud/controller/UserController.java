@@ -30,10 +30,12 @@ public class UserController {
 
         String head = request.getHeader("Authorization");
         String token = head.substring(head.indexOf("bearer") + 7);
-        System.out.println("获取token:"+token);
+        System.out.println("获取token:" + token);
         return Jwts.parser()
                 .setSigningKey("test_key".getBytes(StandardCharsets.UTF_8))
                 .parseClaimsJws(token).getBody();
+
+
         //return authentication.getPrincipal();
     }
 
