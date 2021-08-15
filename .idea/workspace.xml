@@ -16,18 +16,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="完成用户管理">
-      <change afterPath="$PROJECT_DIR$/cloud-oauth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/OauthMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/SpringSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/service/UserService.java" afterDir="false" />
+    <list default="true" id="0feda5b3-cc96-46a2-84b4-fa87e97bcff3" name="Default Changelist" comment="添加oauth2其他的包">
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/JwtToeknEnhancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/JwtTokenStoreConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ouath-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ouath-client/src/main/java/com/zwq/client/OauthClientMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ouath-client/src/main/java/com/zwq/client/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ouath-client/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" beforeDir="false" afterPath="$PROJECT_DIR$/VueAdminJava/src/main/java/com/zwq/cloud/controller/TestCon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oauth2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/AuthorizationServerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/config/AuthorizationServerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-oauth/src/main/java/com/zwq/cloud/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/笔记.txt" beforeDir="false" afterPath="$PROJECT_DIR$/笔记.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +89,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vueAdmin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -96,7 +99,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.30034524" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="shared-indexes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="show.run.dashboard.notification" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -118,24 +121,12 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
-        <option value="Application" />
+        <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
+    <option name="openRunningConfigInTab" value="true" />
   </component>
-  <component name="RunManager" selected="Application.TestCon">
-    <configuration name="CodeGeneratorUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.utils.CodeGeneratorUtil" />
-      <module name="VueAdminJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.zwq.cloud.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.OauthClientMain">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zwq.cloud.utils.JwtUtils" />
       <module name="VueAdminJava" />
@@ -162,13 +153,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,26 +179,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BootMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="demo01" />
+    <configuration name="OauthClientMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ouath-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zwq.security.*" />
+          <option name="PATTERN" value="com.zwq.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zwq.security.BootMain" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zwq.client.OauthClientMain" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthMain" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-oauth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zwq.cloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zwq.cloud.OauthMain" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.OauthClientMain" />
+        <item itemvalue="Spring Boot.OauthMain" />
         <item itemvalue="Application.TestCon" />
         <item itemvalue="Spring Boot.ApplicationRun" />
         <item itemvalue="Application.JwtUtils" />
-        <item itemvalue="Application.CodeGeneratorUtil" />
-        <item itemvalue="Spring Boot.BootMain" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +234,11 @@
       <workItem from="1627914796827" duration="3549000" />
       <workItem from="1628174863923" duration="20800000" />
       <workItem from="1628418446860" duration="8309000" />
-      <workItem from="1628781320836" duration="298000" />
+      <workItem from="1628781320836" duration="352000" />
+      <workItem from="1628871622553" duration="84000" />
+      <workItem from="1628872078287" duration="498000" />
+      <workItem from="1628872660533" duration="577000" />
+      <workItem from="1628873270934" duration="6685000" />
     </task>
     <task id="LOCAL-00001" summary="初始化导入">
       <created>1625583463919</created>
@@ -272,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628421376658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="添加oauth2其他的包">
+      <created>1628781666583</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628781666583</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,7 +315,8 @@
     <MESSAGE value="添加redis和验证码生成" />
     <MESSAGE value="添加验证码等信息" />
     <MESSAGE value="完成用户管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成用户管理" />
+    <MESSAGE value="添加oauth2其他的包" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加oauth2其他的包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

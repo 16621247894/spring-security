@@ -73,6 +73,16 @@ password=123456
 .authorizedGrantTypes("password", "refresh_token", "authorization_code");
 
 会返回一个refresh_token
+访问url
+http://localhost:8080/oauth/token
+Authorization为Basic Auth  输入client 和密码123123
+body参数
+grant_type=refresh_token
+refresh_token=refresh_token
+
+就可以获取新的token
+
+
 
 
 https://www.bilibili.com/video/BV1244y1C7ZH?p=47

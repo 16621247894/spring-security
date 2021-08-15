@@ -15,6 +15,7 @@
       <module name="demo01" target="1.8" />
       <module name="demo02" target="1.8" />
       <module name="oauth2" target="1.8" />
+      <module name="ouath-client" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

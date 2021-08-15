@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/demo01/pom.xml" />
         <option value="$PROJECT_DIR$/demo02/pom.xml" />
         <option value="$PROJECT_DIR$/oauth2/pom.xml" />
+        <option value="$PROJECT_DIR$/ouath-client/pom.xml" />
       </set>
     </option>
   </component>
