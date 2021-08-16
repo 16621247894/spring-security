@@ -12,6 +12,9 @@
 
         <module>VueAdminJava</module>
         <module>cloud-oauth</module>
+        <module>auth-server</module>
+        <module>client-sso-oa</module>
+        <module>client-sso-crm</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -85,7 +88,11 @@
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid}</version>
             </dependency>
-
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.3.7</version>
+            </dependency>
 
             <dependency>
                 <groupId>mysql</groupId>

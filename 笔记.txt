@@ -84,5 +84,5 @@ refresh_token=refresh_token
 
 
 
-
-https://www.bilibili.com/video/BV1244y1C7ZH?p=47
+SSO 参考
+liuminglei/spring-security-oauth2-sso-sample
