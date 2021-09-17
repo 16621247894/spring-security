@@ -13,7 +13,7 @@ import java.util.Date;
 @Component
 public class JwtUtils {
 
-    private long expire=604800;
+    private long expire=1800;
 
     private String secret="hjglaiybghjkhagglguNmafshfnglbgk";
     private String header="Authorization";
